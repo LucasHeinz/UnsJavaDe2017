@@ -1,21 +1,15 @@
 package lista3.Ex3;
 
 public class Quadrado extends Quadrilatero {
-	private double lado;
 
 	public Quadrado(double lado) {
-		this.lado = lado;
-		this.setLado1(lado);
-		this.setLado2(lado);
-		this.setLado3(lado);
-		this.setLado4(lado);
+		super(lado, lado,lado, lado);
 	}
 	
 	@Override
 	public double calculaArea() {
-		double area;
-		area = lado * lado;
-		return area;
+		this.setArea(this.getLado1() * this.getLado1());
+		return this.getArea();
 	}
 
 }

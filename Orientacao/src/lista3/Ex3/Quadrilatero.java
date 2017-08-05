@@ -6,17 +6,17 @@ public abstract class Quadrilatero implements IAreaPerimetro {
 	private double lado2;
 	private double lado3;
 	private double lado4;
+	private double perimetro;
+	private double area;
 
-	// public Quadrilatero(double lado1, double lado2, double lado3, double
-	// lado4) {
-	// this.lado1 = lado1;
-	// this.lado2 = lado2;
-	// this.lado3 = lado3;
-	// this.lado4 = lado4;
-	// }
+	public Quadrilatero(double lado1, double lado2, double lado3, double lado4) {
+		this.lado1 = lado1;
+		this.lado2 = lado2;
+		this.lado3 = lado3;
+		this.lado4 = lado4;
+	}
 
 	public double calculaPerimetro() {
-		double perimetro;
 		perimetro = lado1 + lado2 + lado3 + lado4;
 		return perimetro;
 	}
@@ -52,4 +52,13 @@ public abstract class Quadrilatero implements IAreaPerimetro {
 	public void setLado4(double lado4) {
 		this.lado4 = lado4;
 	}
+
+	public double getArea() {
+		return area;
+	}
+
+	public void setArea(double area) {
+		this.area = area;
+	}
+
 }
