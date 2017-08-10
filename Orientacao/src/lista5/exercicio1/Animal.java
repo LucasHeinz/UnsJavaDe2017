@@ -1,4 +1,4 @@
-package lista5.exDosAnimais;
+package lista5.exercicio1;
 
 public abstract class Animal {
 
@@ -6,6 +6,14 @@ public abstract class Animal {
 	private String cor;
 	private int patas;
 	
+	public Animal(String nome, String cor, int patas) {
+		this.nome = nome;
+		this.cor = cor;
+		this.patas = patas;
+	}
+
+	public abstract String reproduzSom();
+
 	public String getNome() {
 		return nome;
 	}
