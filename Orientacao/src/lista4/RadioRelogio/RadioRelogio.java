@@ -6,5 +6,5 @@ public class RadioRelogio {
 
 	private Date horario;
 	private Date despertar;
-	
+//	private horarioAlarme;
 }
