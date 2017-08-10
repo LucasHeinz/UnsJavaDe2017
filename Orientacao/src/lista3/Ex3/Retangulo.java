@@ -12,5 +12,14 @@ public class Retangulo extends Quadrilatero {
 		this.setArea(this.getLado1() * this.getLado3());
 		return this.getArea();
 	}
+	
+	@Override
+	public String toString() {
+		return  "Retângulo : " +
+				"\nBase: " + this.getLado1() +
+				"\nAltura: " + this.getLado3() +
+				"\nPerímetro: " + this.calculaPerimetro() +
+				"\nÁrea: " + this.calculaArea();
+	}
 
 }

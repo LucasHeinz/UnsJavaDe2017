@@ -27,5 +27,13 @@ public class Circulo implements IAreaPerimetro {
 		double area = 3.14 * (raio * raio);
 		return area;
 	}
+	
+	@Override
+	public String toString() {
+		return "Círculo: " +
+				"Raio: " + this.raio + 
+				"\nÁrea: " + this.calculaArea() +
+				"\nPerímetro: " + this.calculaPerimetro();
+	}
 
 }

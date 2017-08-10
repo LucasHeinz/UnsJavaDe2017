@@ -2,10 +2,10 @@ package lista4;
 
 public class TrabalhadorComissionado extends Empregado {
 
-	private int numVendas;
+	private double numVendas;
 	private double comissao;
 
-	public TrabalhadorComissionado(String nome, String sobrenome, double salario, int numVendas, double comissao) {
+	public TrabalhadorComissionado(String nome, String sobrenome, double salario, double numVendas, double comissao) {
 		super(nome, sobrenome);
 		this.setSalario(salario);
 		this.numVendas = numVendas;
@@ -14,7 +14,7 @@ public class TrabalhadorComissionado extends Empregado {
 
 	@Override
 	public double calcularGanho() {
-		this.setGanho((this.numVendas * this.comissao) + this.getSalario());
+		this.setGanho((this.numVendas * this.comissao/100d) + this.getSalario());
 		return this.getGanho();
 	}
 

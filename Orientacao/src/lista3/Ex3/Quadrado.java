@@ -12,4 +12,11 @@ public class Quadrado extends Quadrilatero {
 		return this.getArea();
 	}
 
+	@Override
+	public String toString() {
+		return "Quadrado: " +
+				"\nLado: " + this.getLado1() +
+				"\nPerímetro: " + this.calculaPerimetro() +
+				"\nÁrea: " + this.calculaArea();
+	}
 }

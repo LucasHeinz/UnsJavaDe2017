@@ -1,11 +1,18 @@
 package lista4;
 
-public abstract class Empregado implements IEmpregado {
+public abstract class Empregado {
 
 	private double salario;
 	private String nome;
 	private String sobrenome;
 	private double ganho;
+
+	public abstract double calcularGanho();
+
+	@Override
+	public String toString() {
+		return "Nome: " + this.nome + " " + this.sobrenome + "\n";
+	}
 
 	public Empregado(String nome, String sobrenome) {
 		this.nome = nome;
