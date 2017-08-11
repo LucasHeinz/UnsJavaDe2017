@@ -3,10 +3,6 @@ package lista5.exercicio3;
 public class Cancela {
 
 	private boolean aberta;
-	
-//	public Cancela(boolean aberta) {
-//		this.aberta = aberta;
-//	}
 
 	public void abrir() {
 		if (aberta == false) {
@@ -26,6 +22,6 @@ public class Cancela {
 		} else {
 			return "A porta está fechada";
 		}
-		
+
 	}
 }
