@@ -2,7 +2,24 @@ package lista5.exercicio6;
 
 public class CaixaEletronico {
 
+	private Integer codigo;
 	private double valorCaixa;
+
+	public Integer getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+
+	public double getValorCaixa() {
+		return valorCaixa;
+	}
+
+	public void setValorCaixa(double valorCaixa) {
+		this.valorCaixa = valorCaixa;
+	}
 
 	public void sacar(double valor) {
 
@@ -14,12 +31,5 @@ public class CaixaEletronico {
 
 	}
 
-	public double depositar(double valor) {
-		this.valorCaixa = this.valorCaixa + valor;
-		return this.valorCaixa;
-	}
-
-	public void imprimirExtrato() {
-
-	}
+	
 }
